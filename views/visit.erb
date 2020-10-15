@@ -13,11 +13,11 @@
   <div class="form-group">
     <label for="exampleFormControlInput1">Выберите парикмахера:</label>
     <select class="form-control" id="exampleFormControlSelect1" value="<%= @parik %>" name='parik'>
-      <option>Вася Пупкин</option>
-      <option>Сергей Жуков</option>
-      <option>Владимир Путин</option>
-      <option>Биргит Ыйгемеел</option>
-      <option>Аким Хохлов</option>
+      <option <%= @parik == 'Вася Пупкин' ? 'selected' : '' %>>Вася Пупкин</option>
+      <option <%= @parik == 'Сергей Жуков' ? 'selected' : '' %>>Сергей Жуков</option>
+      <option <%= @parik == 'Владимир Путин' ? 'selected' : '' %>> Владимир Путин</option>
+      <option <%= @parik == 'Биргит Ыйгемеел' ? 'selected' : '' %>>Биргит Ыйгемеел</option>
+      <option <%= @parik == 'Аким Хохлов' ? 'selected' : '' %>>Аким Хохлов</option>
     </select>
   </div>
   <div class="form-group">
